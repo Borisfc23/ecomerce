@@ -1,0 +1,62 @@
+#page-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.49)),
+    url("../../img/shop/banner.png");
+  background-attachment: fixed;
+  height: 40vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+  transition: 0.3s all ease-in-out;
+}
+#page-header h2 {
+  font-size: 65px;
+}
+#page-header p {
+  font-size: 25px;
+}
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+#page-header label {
+  color: #d11c38;
+  font-weight: 700;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 700px) {
+  #page-header-blog {
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  #page-header {
+    height: 25vh;
+  }
+  #page-header h2 {
+    font-size: 55px;
+  }
+  #page-header p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #page-header {
+    height: 20vh;
+  }
+  #page-header h2 {
+    font-size: 45px;
+  }
+  #page-header p {
+    font-size: 17px;
+  }
+  #page-header label {
+    font-size: 20px;
+  }
+}

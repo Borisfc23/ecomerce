@@ -1,0 +1,243 @@
+[
+  {
+    "id": 1,
+    "name": "Gorra New York Yankees MLB 9Forty White",
+    "price": "119.90",
+    "brand": "New York",
+    "image": "./img/Products/gorro1.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 2,
+    "name": "Gorra New York Yankees MLB 9Forty Navy",
+    "price": "119.90",
+    "brand": "New York",
+    "image": "./img/Products/gorro2.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 3,
+    "name": "Gorra New York Yankees MLB 9Forty Black",
+    "price": "119.90",
+    "brand": "New York",
+    "image": "./img/Products/gorro3.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 4,
+    "name": "Gorra New York Yankees MLB 9Fifty Green",
+    "price": "139.90",
+    "brand": "New York",
+    "image": "./img/Products/gorro4.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 5,
+    "name": "Gorra New York Yankees MLB 9Fifty Blue",
+    "price": "139.90",
+    "brand": "New York",
+    "image": "./img/Products/gorro5.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 6,
+    "name": "Gorra Los Angeles Clippers NBA 9Fifty Blue",
+    "price": "149.95",
+    "brand": "NBA",
+    "image": "./img/Products/gorro6.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 7,
+    "name": "Gorra Milwaukee Bucks NBA 9Fifty Green",
+    "price": "149.95",
+    "brand": "NBA",
+    "image": "./img/Products/gorro7.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 8,
+    "name": "Gorra Boston Celtics NBA 9Fifty Green",
+    "price": "149.95",
+    "brand": "NBA",
+    "image": "./img/Products/gorro8.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 9,
+    "name": "Gorra Golden State Warriors NBA 9Fifty Blue",
+    "price": "149.95",
+    "brand": "NBA",
+    "image": "./img/Products/gorro9.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+
+  {
+    "id": 10,
+    "name": "Gorra New York Yankees MLB 9Fifty Black",
+    "price": "159.90",
+    "brand": "New York",
+    "image": "./img/Products/gorro10.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 11,
+    "name": "Gorra New York Yankees MLB 9Fifty Beige",
+    "price": "139.95",
+    "brand": "New York",
+    "image": "./img/Products/gorro11.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 12,
+    "name": "Gorra New York Yankees MLB 59Fifty Black",
+    "price": "179.95",
+    "brand": "New York",
+    "image": "./img/Products/gorro12.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 13,
+    "name": "Gorra Brooklyn Nets NBA 9Fifty Black",
+    "price": "149.95",
+    "brand": "NBA",
+    "image": "./img/Products/gorro13.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "New York Yankees",
+    "mid": "60358125"
+  },
+  {
+    "id": 14,
+    "name": "Gorra Chicago Bulls NBA 9Fifty Red",
+    "price": "149.95",
+    "brand": "NBA",
+    "image": "./img/Products/gorro14.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "League NBA",
+    "mid": "60358125"
+  },
+  {
+    "id": 15,
+    "name": "Gorra Los Angeles Lakers NBA 9Fifty Purple",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "price": "149.95",
+    "brand": "NBA",
+    "image": "./img/Products/gorro15.jpg",
+    "color": "Blanco",
+    "silueta": "9FORTY",
+    "equipo": "League NBA",
+    "mid": "60358125"
+  },
+  {
+    "id": 16,
+    "name": "Gorra Chicago Bulls NBA 59Fifty Black",
+    "price": "159.95",
+    "brand": "NBA",
+    "image": "./img/Products/gorro16.jpg",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe nesciunt corrupti omnis earum non officiis. Eligendi natus facere fugit autem est dolore molestias officiis earum adipisci, ducimus minus ipsam. Veritatis asperiores dolorum provident! Quia deserunt fugit odio mollitia consectetur!",
+    "color": "Black",
+    "silueta": "9FORTY",
+    "equipo": "League NBA",
+    "mid": "60358125"
+  },
+  {
+    "id": 17,
+    "type": "blog",
+    "title": "The summer will be hot, with the New Era Summer City series",
+    "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum laborum, quos cum, pariatur illum dicta autem nobis impedit dolores quas nesciunt, consectetur porro ipsum! Dolor minus repudiandae nesciunt rem atque in consectetur non voluptatum voluptate, aliquid, eius, expedita nam sunt quod ratione. Asperiores porro repellendus delectus natus doloribus maxime totam sapiente labore. Voluptates maxime beatae nesciunt dolore! Animi inventore soluta, quisquam vero mollitia obcaecati, officia hic exercitationem quaerat nam est!",
+    "image": "./img/blog/b1.webp",
+    "date": "23/01"
+  },
+  {
+    "id": 18,
+    "type": "blog",
+    "title": "The Quiet Life, the California arty brand",
+    "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum laborum, quos cum, pariatur illum dicta autem nobis impedit dolores quas nesciunt, consectetur porro ipsum! Dolor minus repudiandae nesciunt rem atque in consectetur non voluptatum voluptate, aliquid, eius, expedita nam sunt quod ratione. Asperiores porro repellendus delectus natus doloribus maxime totam sapiente labore. Voluptates maxime beatae nesciunt dolore! Animi inventore soluta, quisquam vero mollitia obcaecati, officia hic exercitationem quaerat nam est!",
+    "image": "./img/blog/b2.webp",
+    "date": "23/02"
+  },
+  {
+    "id": 19,
+    "type": "blog",
+    "title": "This spring, a colorful madness in Kangol",
+    "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum laborum, quos cum, pariatur illum dicta autem nobis impedit dolores quas nesciunt, consectetur porro ipsum! Dolor minus repudiandae nesciunt rem atque in consectetur non voluptatum voluptate, aliquid, eius, expedita nam sunt quod ratione. Asperiores porro repellendus delectus natus doloribus maxime totam sapiente labore. Voluptates maxime beatae nesciunt dolore! Animi inventore soluta, quisquam vero mollitia obcaecati, officia hic exercitationem quaerat nam est!",
+    "image": "./img/blog/b3.webp",
+    "date": "23/03"
+  },
+  {
+    "id": 20,
+    "type": "blog",
+    "title": "Protection, comfort and adventurous style: Tilley quality",
+    "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum laborum, quos cum, pariatur illum dicta autem nobis impedit dolores quas nesciunt, consectetur porro ipsum! Dolor minus repudiandae nesciunt rem atque in consectetur non voluptatum voluptate, aliquid, eius, expedita nam sunt quod ratione. Asperiores porro repellendus delectus natus doloribus maxime totam sapiente labore. Voluptates maxime beatae nesciunt dolore! Animi inventore soluta, quisquam vero mollitia obcaecati, officia hic exercitationem quaerat nam est!",
+    "image": "./img/blog/b4.webp",
+    "date": "23/04"
+  },
+  {
+    "id": 21,
+    "type": "blog",
+    "title": "Performance and comfort, with CIELE running caps",
+    "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum laborum, quos cum, pariatur illum dicta autem nobis impedit dolores quas nesciunt, consectetur porro ipsum! Dolor minus repudiandae nesciunt rem atque in consectetur non voluptatum voluptate, aliquid, eius, expedita nam sunt quod ratione. Asperiores porro repellendus delectus natus doloribus maxime totam sapiente labore. Voluptates maxime beatae nesciunt dolore! Animi inventore soluta, quisquam vero mollitia obcaecati, officia hic exercitationem quaerat nam est!",
+    "image": "./img/blog/b5.webp",
+    "date": "23/05"
+  },
+  {
+    "id": 22,
+    "type": "blog",
+    "title": "Sustainable materials and colorful prints, at Hello Hossy",
+    "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum laborum, quos cum, pariatur illum dicta autem nobis impedit dolores quas nesciunt, consectetur porro ipsum! Dolor minus repudiandae nesciunt rem atque in consectetur non voluptatum voluptate, aliquid, eius, expedita nam sunt quod ratione. Asperiores porro repellendus delectus natus doloribus maxime totam sapiente labore. Voluptates maxime beatae nesciunt dolore! Animi inventore soluta, quisquam vero mollitia obcaecati, officia hic exercitationem quaerat nam est!",
+    "image": "./img/blog/b6.webp",
+    "date": "23/06"
+  }
+]

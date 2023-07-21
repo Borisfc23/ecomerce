@@ -1,0 +1,74 @@
+#banner {
+  background-image: linear-gradient(
+      rgba(197, 0, 46, 0.7),
+      rgba(10, 10, 193, 0.761)
+    ),
+    url("../../img/home/bannergorra.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh;
+  width: 100%;
+  transition: 0.3s all ease-in-out;
+}
+#banner h4 {
+  color: #fff;
+  font-size: 30px;
+}
+#banner h2 {
+  color: #fff;
+  font-size: 66px;
+  padding: 10px 0;
+  margin: 10px 0 15px;
+}
+#banner h2 span {
+  color: #d11c38;
+}
+#banner button:hover {
+  background: #333;
+  color: white;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 1080px) {
+  #banner {
+    background-position: right;
+  }
+}
+@media screen and (max-width: 700px) {
+  #banner h4 {
+    font-size: 28px;
+  }
+  #banner h2 {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #banner h4 {
+    font-size: 22px;
+  }
+  #banner h2 {
+    font-size: 40px;
+  }
+  #banner button {
+    padding: 12px 40px;
+  }
+  #banner {
+    background-position: left;
+  }
+}
+@media screen and (max-width: 400px) {
+  #banner h4 {
+    font-size: 20px;
+  }
+  #banner h2 {
+    font-size: 37px;
+  }
+  #banner button {
+    padding: 10px 35px;
+  }
+}

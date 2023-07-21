@@ -1,0 +1,21 @@
+#error-404 {
+  height: 60vh;
+}
+#error-404 .error-absoluto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 50px;
+}
+
+#error-404 h2 {
+  font-style: italic;
+  font-size: 160px;
+}
+#error-404 h3 {
+  font-size: 22px;
+}

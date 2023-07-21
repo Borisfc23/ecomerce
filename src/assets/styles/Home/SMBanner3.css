@@ -1,0 +1,96 @@
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 5px; */
+}
+#banner3 .banner-box,
+#banner3 .banner3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../../img/home/banner3-1.png");
+
+  width: 28%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 5px;
+}
+#banner3 .banner2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../../img/home/banner3-3.png");
+
+  width: 40%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 5px;
+}
+#banner3 .banner3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../../img/home/banner3-2.png");
+}
+#banner3 .banner-box h2 {
+  color: #fff;
+  font-size: 38px !important;
+  font-weight: 900;
+}
+#banner3 .banner-box h4 {
+  color: gold;
+  font-size: 23px !important;
+  font-weight: 600;
+  margin: 7px 0;
+}
+@media screen and (max-width: 1080px) {
+  #banner3 .banner-box h2 {
+    font-size: 36px !important;
+    line-height: 38px;
+  }
+  #banner3 .banner-box h4 {
+    font-size: 21px !important;
+  }
+  #banner3 .banner-box,
+  #banner3 .banner2 {
+    width: 49.5%;
+  }
+  #banner3 .banner3 {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #banner3 .banner-box h2 {
+    font-size: 28px !important;
+    line-height: 35px;
+  }
+  #banner3 .banner-box h4 {
+    font-size: 18px !important;
+  }
+  #banner3 .banner-box,
+  #banner3 .banner2,
+  #banner3 .banner3 {
+    width: 100%;
+  }
+  #banner3 .banner2 {
+    margin: 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #banner3 .banner-box h2 {
+    font-size: 24px !important;
+    line-height: 30px;
+  }
+  #banner3 .banner-box h4 {
+    font-size: 15px !important;
+  }
+}
