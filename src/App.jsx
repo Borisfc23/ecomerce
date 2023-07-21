@@ -1,6 +1,6 @@
 import "./App.css";
 import { Toaster } from "react-hot-toast";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Error404 from "./pages/Error404";
@@ -12,7 +12,7 @@ import Cart from "./pages/Cart";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Toaster position="top-right" reverseOrder={false} />
         <Routes>
           <Route path="*" element={<Error404 />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
