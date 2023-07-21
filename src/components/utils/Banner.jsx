@@ -5,7 +5,8 @@ const Banner = ({ texto, desc, img }) => {
     <div
       id="page-header-banner"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.49)),url("../../src/assets/img/${img}")`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.49)),url("./img/${img}")`,
+        // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.49)),url("../../src/assets/img/${img}")`,
       }}
     >
       <TypewriterEffect text={texto} />
