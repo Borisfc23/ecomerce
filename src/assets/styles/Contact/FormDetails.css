@@ -82,20 +82,41 @@
   #form-details {
     padding: 80px 50px;
   }
+  #form-details form h2 {
+    font-size: 36px;
+  }
+  #form-details .people {
+    gap: 30px;
+  }
 }
 @media screen and (max-width: 500px) {
   #form-details {
-    padding: 40px 50px;
+    padding: 40px 10px;
   }
   #form-details .people {
     margin-top: 20px;
+    gap: 20px;
+  }
+  #form-details .people div {
+    width: 100%;
+  }
+  #form-details .people div p {
+    font-size: 14px;
+  }
+  #form-details form h2 {
+    font-size: 26px;
+  }
+  #form-details form button {
+    padding: 8px 25px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 400px) {
-  #contact-details .details h2 {
-    font-size: 21px;
+  #form-details form h2 {
+    font-size: 23px;
+    padding: 5px 0;
   }
   #form-details {
-    padding: 20px 30px;
+    padding: 20px 10px;
   }
 }

@@ -53,22 +53,20 @@
     font-size: 38px;
   }
   #about-head {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 @media screen and (max-width: 500px) {
   #about-head div h2 {
-    font-size: 29px;
+    font-size: 26px;
   }
-  #about-head {
-    padding: 70px 50px;
+  #about-head div p {
+    margin-top: 10px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 400px) {
   #about-head div h2 {
     font-size: 22px;
-  }
-  #about-head {
-    padding: 70px 30px;
   }
 }

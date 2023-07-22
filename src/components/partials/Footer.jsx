@@ -3,6 +3,7 @@ import logo from "../../assets/img/logoblanco.png";
 import p1 from "../../assets/img/footer/p1.jpg";
 import p2 from "../../assets/img/footer/p2.jpg";
 import p4 from "../../assets/img/footer/p4.jpg";
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="section-p1">
@@ -21,8 +22,8 @@ const Footer = () => {
       </div>
       <div className="col">
         <h4>About</h4>
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
+        <NavLink to={"/about"}>About Us</NavLink>
+        <NavLink to={"/contact"}>Contact Us</NavLink>
         <a href="">Privacy Policy</a>
         <a href="">Terms & Conditions</a>
         <a href="">Delivery Information</a>

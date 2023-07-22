@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FullWithLayout from "../layout/FullWithLayout";
 import Banner from "../components/utils/Banner";
 import AboutHead from "../components/About/AboutHead";
@@ -6,6 +6,10 @@ import Features from "../components/Home/Features";
 
 const About = () => {
   const texto = "#KnowUs";
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <FullWithLayout>
       <Banner

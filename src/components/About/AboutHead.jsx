@@ -3,7 +3,6 @@ import "../../assets/styles/About/AboutHead.css";
 const AboutHead = () => {
   return (
     <div id="about-head" className="section-p1">
-      {/* <img src="../../src/assets/img/about/h1.jpg" alt="" /> */}
       <img src="./img/about/h1.jpg" alt="" />
       <div>
         <h2>Who we are?</h2>

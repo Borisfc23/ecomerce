@@ -67,23 +67,49 @@
 @media screen and (max-width: 1080px) {
   #sm-banner .banner-box {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   #sm-banner .banner-box2 {
     width: 100%;
+  }
+  #sm-banner .banner-box h2,
+  #sm-banner .banner-box2 h2 {
+    font-size: 35px !important;
+    margin: 0;
+  }
+  #sm-banner .banner-box h4,
+  #sm-banner .banner-box2 h4 {
+    font-size: 25px !important;
+  }
+  #sm-banner button {
+    padding: 12px 32px;
+  }
+  #sm-banner .banner-box,
+  #sm-banner .banner-box2 {
+    height: 40vh;
   }
 }
 @media screen and (max-width: 700px) {
   #sm-banner .banner-box h4,
   #sm-banner .banner-box2 h4 {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
   #sm-banner .banner-box h2,
   #sm-banner .banner-box2 h2 {
-    font-size: 36px !important;
+    font-size: 28px !important;
+    margin: 0;
   }
   #sm-banner span {
     font-size: 20px;
+    font-weight: 400;
+  }
+  #sm-banner button {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
+  #sm-banner .banner-box,
+  #sm-banner .banner-box2 {
+    height: 18rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -94,20 +120,17 @@
   #sm-banner .banner-box h2,
   #sm-banner .banner-box2 h2 {
     font-size: 22px !important;
-    margin: 5px;
+    margin: 5px 0;
     line-height: 25px;
   }
   #sm-banner span {
     font-size: 18px;
   }
-  #sm-banner .banner-box {
-    height: 30vh;
-  }
+  #sm-banner .banner-box,
   #sm-banner .banner-box2 {
-    height: 30vh;
+    height: 15rem;
   }
   #sm-banner button {
-    font-size: 18px;
     padding: 8px 25px;
     font-size: 16px;
     margin-top: 25px;
@@ -124,5 +147,13 @@
   }
   #sm-banner span {
     font-size: 16px;
+  }
+  #sm-banner button {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+  #sm-banner .banner-box,
+  #sm-banner .banner-box2 {
+    height: 12rem;
   }
 }

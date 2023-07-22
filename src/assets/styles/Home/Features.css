@@ -53,12 +53,20 @@
   }
 }
 @media screen and (max-width: 500px) {
+  #features {
+    justify-content: space-around;
+  }
   #features .fe-box img {
     height: 100px;
   }
   #features .fe-box h6 {
     margin-top: 5px;
     padding: 5px 4px;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #features .fe-box {
+    /* padding: 10px; */
+    width: 140px;
   }
 }

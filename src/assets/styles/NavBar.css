@@ -23,6 +23,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  outline: none;
 }
 #navbar li {
   list-style: none;
@@ -56,6 +57,7 @@
 #mobile {
   display: none;
   align-items: center;
+  outline: none;
 }
 .view {
   right: 0 !important;

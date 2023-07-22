@@ -89,24 +89,36 @@
 }
 @media screen and (max-width: 500px) {
   #blog {
-    padding: 70px 50px 0 50px;
+    padding: 70px 10px 0 10px;
+  }
+  #blog img {
+    height: 330px;
   }
   #blog .blog-box h1 {
     font-size: 40px;
   }
+  #blog .blog-details h4 {
+    font-size: 21px;
+  }
+  #blog .blog-details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  #blog .blog-details a {
+    font-size: 12px;
+    padding: 9px 25px;
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 400px) {
   #blog {
-    padding: 70px 30px 0 30px;
+    padding: 70px 10px 0 10px;
   }
   #blog .blog-box h1 {
     font-size: 35px;
   }
   #blog img {
     height: 300px;
-  }
-  #blog .blog-details h4 {
-    font-size: 21px;
   }
   #blog .blog-box {
     padding-bottom: 80px;

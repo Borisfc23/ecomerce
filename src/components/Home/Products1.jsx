@@ -4,7 +4,7 @@ import type1 from "../../assets/img/Products/type1.jpg";
 import type2 from "../../assets/img/Products/type2.jpg";
 import type3 from "../../assets/img/Products/type3.jpg";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Products1 = ({ section3, count }) => {
   const starts = new Array(5).fill("");
   const [newyork, setnewyork] = useState([]);
@@ -26,7 +26,9 @@ const Products1 = ({ section3, count }) => {
         {newyork.map((gorro, index) => (
           <div className="pro" key={index}>
             <div className="pro-new">NEW</div>
-            <img src={gorro.image} alt="" />
+            <NavLink to={`/shop/${gorro.id}`}>
+              <img src={gorro.image} alt="" />
+            </NavLink>
             <div className="des">
               <span>{gorro.brand}</span>
               <h5>{gorro.name}</h5>

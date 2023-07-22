@@ -59,13 +59,16 @@
   #contact-details .map {
     height: 350px !important;
   }
+  #contact-details {
+    padding: 40px 10px;
+  }
+  #contact-details .details h2 {
+    font-size: 21px;
+  }
 }
 @media screen and (max-width: 400px) {
   #contact-details .map {
     height: 250px !important;
-  }
-  #contact-details {
-    padding: 40px 30px;
   }
   #contact-details .details li p {
     font-size: 13px;

@@ -69,15 +69,18 @@
     width: 45%;
   }
 }
+@media screen and (max-width: 500px) {
+  #contact-store .imgs div p {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 400px) {
   #contact-store .title h2 {
     font-size: 21px;
   }
   #contact-store .imgs div {
     width: 100%;
-    /* border: 1px solid red; */
   }
-
   #contact-store {
     padding: 20px 30px;
   }
