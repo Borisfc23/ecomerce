@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../../assets/styles/Home/Banner.css";
 
 const Banner = () => {
@@ -7,7 +8,9 @@ const Banner = () => {
       <h2>
         Up to <span>60% Off</span> - All Hats
       </h2>
-      <button className="normal">Explore More</button>
+      <NavLink to={"/shop"}>
+        <button className="normal">Explore More</button>
+      </NavLink>
     </div>
   );
 };

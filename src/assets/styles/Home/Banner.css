@@ -38,13 +38,19 @@
   #banner {
     background-position: right;
   }
+  #banner h2 {
+    font-size: 55px;
+  }
 }
 @media screen and (max-width: 700px) {
+  #banner {
+    height: 35vh;
+  }
   #banner h4 {
     font-size: 28px;
   }
   #banner h2 {
-    font-size: 52px;
+    font-size: 42px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -52,23 +58,35 @@
     font-size: 22px;
   }
   #banner h2 {
-    font-size: 40px;
+    font-size: 35px;
+    margin: 0;
   }
   #banner button {
+    font-size: 12px;
     padding: 12px 40px;
   }
   #banner {
     background-position: left;
   }
+  #banner {
+    height: 30vh;
+  }
+  #banner button {
+    padding: 9px 28px;
+  }
 }
 @media screen and (max-width: 400px) {
   #banner h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
   #banner h2 {
-    font-size: 37px;
+    font-size: 26px;
+    padding: 5px 0;
   }
   #banner button {
-    padding: 10px 35px;
+    padding: 8px 25px;
+  }
+  #banner {
+    height: 25vh;
   }
 }

@@ -54,8 +54,16 @@ body {
 html {
   scroll-behavior: smooth;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .section-p1 {
     padding: 40px 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-p1 {
+    padding: 20px 10px;
+  }
+  .section-m1 {
+    margin: 20px 0;
   }
 }

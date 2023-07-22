@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import banner1 from "../../assets/img/home/banner1.jpg";
 import banner2 from "../../assets/img/home/banner2.jpg";
 import banner3 from "../../assets/img/home/banner3.jpg";
+import { NavLink } from "react-router-dom";
 const CarouselSlider = () => {
   return (
     <section id="content-carousel">
@@ -16,25 +17,25 @@ const CarouselSlider = () => {
         <div className="slider-content">
           <img src={banner1} />
           <div className="slider-btn">
-            <button className="boton-shop ">
+            <NavLink to={"/shop"} className="boton-shop ">
               Shop Now <i className="fa-solid fa-fire"></i>
-            </button>
+            </NavLink>
           </div>
         </div>
         <div className="slider-content">
           <img src={banner2} />
           <div className="slider-btn">
-            <button className="boton-shop ">
+            <NavLink to={"/shop"} className="boton-shop ">
               Shop Now <i className="fa-solid fa-fire"></i>
-            </button>
+            </NavLink>
           </div>
         </div>
         <div className="slider-content">
           <img src={banner3} />
           <div className="slider-btn">
-            <button className="boton-shop ">
+            <NavLink to={"/shop"} className="boton-shop ">
               Shop Now <i className="fa-solid fa-fire"></i>
-            </button>
+            </NavLink>
           </div>
         </div>
       </Carousel>
