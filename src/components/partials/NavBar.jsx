@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../../assets/img/logo.png";
 import "../../assets/styles/NavBar.css";
 import { NavLink } from "react-router-dom";
-import gorro from "../../assets/img/Products/gorro1.jpg";
+import { useStateValue } from "../../context/cartContext";
 const Test = () => {
   const sentences = [
     "NATIONAL DELIVERIES 👍",
@@ -33,6 +33,32 @@ const Test = () => {
   const handleCloseCart = () => {
     const cart = document.querySelector(".nav-cart");
     cart.classList.toggle("view-cart");
+  };
+  //view cart
+  const [{ cart }, dispatch] = useStateValue();
+  let totalPay = 0;
+  let shipment = 20;
+  cart.map((item) => {
+    totalPay = item.price * item.quantity + totalPay;
+  });
+  //remove Product
+  const removeItem = (id) => {
+    dispatch({
+      type: "REMOVE_ITEM_TO_CART",
+      id,
+    });
+  };
+  const removeOneItem = (id) => {
+    dispatch({
+      type: "REMOVE_ONE_ITEM",
+      id,
+    });
+  };
+  const addMoreProduct = (producto) => {
+    dispatch({
+      type: "ADD_TO_CART",
+      item: { ...producto, quantity: producto.quantity + 1 },
+    });
   };
   return (
     <div className="header-primary">
@@ -91,110 +117,73 @@ const Test = () => {
           <div className="nav-cart-body">
             <table className="data">
               <tbody>
-                <tr>
-                  <th>
-                    <img src={gorro} alt="" width={"50px"} />
-                  </th>
-                  <th>
-                    Lorem, ipsum dolor. <br />
-                    S/159.95
-                  </th>
-                  <th className="conta">
-                    <button>
-                      <i className="fa-solid fa-minus"></i>
-                    </button>
-                    <p>15</p>
-                    <button>
-                      <i className="fa-solid fa-plus"></i>
-                    </button>
-                  </th>
-                  <th>
-                    <i className="far fa-times-circle"></i>
-                  </th>
-                </tr>
-                <tr>
-                  <th>
-                    <img src={gorro} alt="" width={"50px"} />
-                  </th>
-                  <th>
-                    Lorem, ipsum dolor. <br />
-                    S/159.95
-                  </th>
-                  <th className="conta">
-                    <button>
-                      <i className="fa-solid fa-minus"></i>
-                    </button>
-                    <p>15</p>
-                    <button>
-                      <i className="fa-solid fa-plus"></i>
-                    </button>
-                  </th>
-                  <th>
-                    <i className="far fa-times-circle"></i>
-                  </th>
-                </tr>
-                <tr>
-                  <th>
-                    <img src={gorro} alt="" width={"50px"} />
-                  </th>
-                  <th>
-                    Lorem, ipsum dolor. <br />
-                    S/159.95
-                  </th>
-                  <th className="conta">
-                    <button>
-                      <i className="fa-solid fa-minus"></i>
-                    </button>
-                    <p>15</p>
-                    <button>
-                      <i className="fa-solid fa-plus"></i>
-                    </button>
-                  </th>
-                  <th>
-                    <i className="far fa-times-circle"></i>
-                  </th>
-                </tr>
-                <tr>
-                  <th>
-                    <img src={gorro} alt="" width={"50px"} />
-                  </th>
-                  <th>
-                    Lorem, ipsum dolor. <br />
-                    S/159.95
-                  </th>
-                  <th className="conta">
-                    <button>
-                      <i className="fa-solid fa-minus"></i>
-                    </button>
-                    <p>15</p>
-                    <button>
-                      <i className="fa-solid fa-plus"></i>
-                    </button>
-                  </th>
-                  <th>
-                    <i className="far fa-times-circle"></i>
-                  </th>
-                </tr>
+                {cart.length ? (
+                  cart.map((prod, index) => (
+                    <tr key={index}>
+                      <th>
+                        <img src={prod.image} alt="" width={"50px"} />
+                      </th>
+                      <th>
+                        {prod.name}
+                        <br />
+                        S/{prod.price}
+                      </th>
+                      <th className="conta">
+                        <button onClick={() => removeOneItem(prod.id)}>
+                          <i className="fa-solid fa-minus"></i>
+                        </button>
+                        <p>{prod.quantity}</p>
+                        <button onClick={() => addMoreProduct(prod)}>
+                          <i className="fa-solid fa-plus"></i>
+                        </button>
+                      </th>
+                      <th>
+                        <i
+                          className="far fa-times-circle "
+                          onClick={() => removeItem(prod.id)}
+                        ></i>
+                      </th>
+                    </tr>
+                  ))
+                ) : (
+                  <tr>
+                    <td
+                      colSpan={3}
+                      style={{ fontSize: "16px", paddingBottom: "1rem" }}
+                    >
+                      Cart empty
+                    </td>
+                  </tr>
+                )}
               </tbody>
             </table>
-            <div className="cart-desc">
-              <table>
-                <tbody>
-                  <tr>
-                    <th>1 article</th>
-                    <td>S/250</td>
-                  </tr>
-                  <tr>
-                    <th>Shipping</th>
-                    <td>Free</td>
-                  </tr>
-                  <tr>
-                    <th>Total</th>
-                    <td>S/250</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            {cart.length ? (
+              <div className="cart-desc">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>SubTotal</th>
+                      <td>S/{totalPay.toFixed(2)}</td>
+                    </tr>
+                    <tr>
+                      <th>Shipping</th>
+                      <td>{totalPay < 200 ? "S/20" : "Free"}</td>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <td>
+                        S/
+                        {totalPay < 200
+                          ? (totalPay + shipment).toFixed(2)
+                          : totalPay.toFixed(2)}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            ) : (
+              ""
+            )}
             <NavLink to={"/cart"}>GO TO SHOPPING CART</NavLink>
           </div>
         </div>

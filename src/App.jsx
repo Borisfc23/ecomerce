@@ -9,7 +9,14 @@ import ProductDetail from "./pages/ProductDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
+import { useEffect } from "react";
+import { useStateValue } from "./context/cartContext";
 function App() {
+  const [{ cart }, dispatch] = useStateValue();
+  useEffect(() => {
+    window.localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   return (
     <>
       <HashRouter>

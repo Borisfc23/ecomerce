@@ -1,9 +1,31 @@
 import "../../assets/styles/Cart/CartTable.css";
-import gorro from "../../assets/img/Products/gorro1.jpg";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useStateValue } from "../../context/cartContext";
 const CartTable = () => {
-  const [valQuantity, setvalQuantity] = useState(1);
+  const [{ cart }, dispatch] = useStateValue();
+  let totalPay = 0;
+  let shipment = 20;
+  cart.map((item) => {
+    totalPay = item.price * item.quantity + totalPay;
+  });
+  const removeItem = (id) => {
+    dispatch({
+      type: "REMOVE_ITEM_TO_CART",
+      id,
+    });
+  };
+  const removeOneItem = (id) => {
+    dispatch({
+      type: "REMOVE_ONE_ITEM",
+      id,
+    });
+  };
+  const addMoreProduct = (producto) => {
+    dispatch({
+      type: "ADD_TO_CART",
+      item: { ...producto, quantity: producto.quantity + 1 },
+    });
+  };
   return (
     <div id="cart" className="section-p1">
       <div className="cart-table">
@@ -20,39 +42,39 @@ const CartTable = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <img src={gorro} alt="" />
-              </td>
-              <td>Lorem ipsum dolor sit amet, consectetur adipisicing</td>
-              <td>S/159.95</td>
-              <td>
-                <input
-                  type="number"
-                  min={1}
-                  value={valQuantity}
-                  onChange={(e) => setvalQuantity(e.target.value)}
-                />
-              </td>
-              <td>S/159.95</td>
-              <td>
-                <i className="far fa-times-circle"></i>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src={gorro} alt="" />
-              </td>
-              <td>Lorem ipsum dolor sit amet, consectetur adipisicing</td>
-              <td>S/159.95</td>
-              <td>
-                <input type="number" min={1} value="1" />
-              </td>
-              <td>S/159.95</td>
-              <td>
-                <i className="far fa-times-circle"></i>
-              </td>
-            </tr>
+            {cart.length ? (
+              cart.map((prod, index) => (
+                <tr key={index}>
+                  <td>
+                    <img src={prod.image} alt="" />
+                  </td>
+                  <td>{prod.name}</td>
+                  <td>S/{prod.price}</td>
+                  <td>
+                    <div className="contador">
+                      <button onClick={() => removeOneItem(prod.id)}>
+                        <i className="fa-solid fa-minus"></i>
+                      </button>
+                      <p>{prod.quantity}</p>
+                      <button onClick={() => addMoreProduct(prod)}>
+                        <i className="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </td>
+                  <td>S/{(prod.quantity * prod.price).toFixed(2)}</td>
+                  <td>
+                    <i
+                      className="far fa-times-circle delete"
+                      onClick={() => removeItem(prod.id)}
+                    ></i>
+                  </td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={7}>Your cart is empty</td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
@@ -67,15 +89,25 @@ const CartTable = () => {
             <tbody>
               <tr>
                 <th>N° Items</th>
-                <td>5</td>
+                <td>{cart.length}</td>
               </tr>
               <tr>
                 <th>Subtotal</th>
-                <td>S/200</td>
+                <td>S/{totalPay.toFixed(2)}</td>
+              </tr>
+              <tr>
+                <th>Shipping</th>
+                <td>{totalPay < 200 ? "S/20" : "Free"}</td>
               </tr>
               <tr>
                 <th>Total</th>
-                <td>S/200</td>
+                <td>
+                  {" "}
+                  S/
+                  {totalPay < 200
+                    ? (totalPay + shipment).toFixed(2)
+                    : totalPay.toFixed(2)}
+                </td>
               </tr>
             </tbody>
           </table>

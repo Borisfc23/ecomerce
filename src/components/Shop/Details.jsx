@@ -4,6 +4,7 @@ import productos from "../../assets/api/api.json";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { useEffect, useState } from "react";
+import { useStateValue } from "../../context/cartContext";
 const Details = () => {
   const { id } = useParams();
   const [product, setproduct] = useState({});
@@ -12,14 +13,34 @@ const Details = () => {
     const prod = productos.find((p) => p.id == id);
     setproduct(prod);
     window.scrollTo(0, 0);
+    setcount(1);
   }, [id]);
-  const handleMinus = () => {
+  const removeOneItem = () => {
     if (count > 1) {
       setcount(count - 1);
+      dispatch({
+        type: "ADD_TO_CART",
+        item: {
+          ...product,
+          quantity: count,
+        },
+      });
     }
   };
+  //ADD TO CART
+  const [{ cart }, dispatch] = useStateValue();
+  const addToCart = () => {
+    dispatch({
+      type: "ADD_TO_CART",
+      item: {
+        ...product,
+        quantity: count,
+      },
+    });
+  };
+  //ADD ONE MORE
   const handlePlus = () => {
-    setcount((prev) => prev + 1);
+    setcount(count + 1);
   };
   return (
     <div id="prodetails" className="section-p1">
@@ -51,7 +72,7 @@ const Details = () => {
         </select>
         <div className="count">
           <div className="count-input">
-            <button onClick={handleMinus}>
+            <button onClick={removeOneItem}>
               <i className="fa-solid fa-minus"></i>
             </button>
             <p>{count}</p>
@@ -60,7 +81,9 @@ const Details = () => {
             </button>
           </div>
           <div className="content-cart">
-            <button className="add-cart">Add to Cart</button>
+            <button className="add-cart" onClick={addToCart}>
+              Add to Cart
+            </button>
           </div>
         </div>
         <h4>Description</h4>
