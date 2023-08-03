@@ -72,7 +72,9 @@ const CartTable = () => {
               ))
             ) : (
               <tr>
-                <td colSpan={7}>Your cart is empty</td>
+                <td colSpan={7} style={{ padding: "1rem 0" }}>
+                  Your cart is empty
+                </td>
               </tr>
             )}
           </tbody>
@@ -97,16 +99,23 @@ const CartTable = () => {
               </tr>
               <tr>
                 <th>Shipping</th>
-                <td>{totalPay < 200 ? "S/20" : "Free"}</td>
+                <td>
+                  {totalPay < 200
+                    ? cart.length > 0
+                      ? "S/20"
+                      : "S/0.00"
+                    : "Free"}
+                </td>
               </tr>
               <tr>
                 <th>Total</th>
                 <td>
                   {" "}
-                  S/
                   {totalPay < 200
-                    ? (totalPay + shipment).toFixed(2)
-                    : totalPay.toFixed(2)}
+                    ? cart.length > 0
+                      ? "S/" + (totalPay + shipment).toFixed(2)
+                      : "S/0.00"
+                    : "S/" + totalPay.toFixed(2)}
                 </td>
               </tr>
             </tbody>

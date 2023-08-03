@@ -96,13 +96,26 @@ const Test = () => {
             <li>
               <NavLink to={"/contact"}>Contact</NavLink>
             </li>
-            <li>
-              <i className="fa-solid fa-bag-shopping" onClick={handleCart}></i>
+            <li className="hidden-mobile">
+              <div className="cart-button">
+                <i
+                  className="fa-solid fa-bag-shopping"
+                  onClick={handleCart}
+                ></i>
+                {cart.length > 0 ? (
+                  <div className="circle">{cart.length}</div>
+                ) : (
+                  ""
+                )}
+              </div>
             </li>
           </ul>
         </div>
         <div id="mobile">
-          <i className="fa-solid fa-bag-shopping" onClick={handleCart}></i>
+          <div className="cart-button">
+            <i className="fa-solid fa-bag-shopping" onClick={handleCart}></i>
+            {cart.length > 0 ? <div className="circle">{cart.length}</div> : ""}
+          </div>
           <i className="fas fa-bars" id="bar" onClick={handleMenu}></i>
         </div>
         {/* NUEVO CART */}

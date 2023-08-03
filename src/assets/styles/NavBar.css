@@ -217,6 +217,24 @@
 .nav-cart .cart-desc table {
   margin-bottom: 10px;
 }
+.cart-button {
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 18px;
+  height: 18px;
+  background-color: #c5002e;
+  border-radius: 50%;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 1000px) {
   .content-close {
     background-color: #444444;
@@ -250,6 +268,9 @@
     padding: 80px 0 0 10px;
     z-index: 100;
     transition: 0.3s all ease-in-out;
+  }
+  .hidden-mobile {
+    visibility: hidden;
   }
   .link-top {
     margin-top: 20px;
